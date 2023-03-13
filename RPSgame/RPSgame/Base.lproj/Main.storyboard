@@ -88,6 +88,9 @@
                                         <state key="normal" title="ROCK">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rpsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="47a-Ag-itr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPF-C3-SPs">
                                         <rect key="frame" x="122.66666666666666" y="0.0" width="107.66666666666666" height="107.66666666666667"/>
@@ -97,6 +100,9 @@
                                         <state key="normal" title="SISSOR">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rpsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KRY-QR-Toz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gv9-6g-w8v">
                                         <rect key="frame" x="245.33333333333329" y="0.0" width="107.66666666666666" height="107.66666666666667"/>
@@ -106,6 +112,9 @@
                                         <state key="normal" title="PAPER">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rpsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkZ-P2-T1c"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -120,6 +129,9 @@
                                         <state key="normal" title="RESET">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="szM-Nw-vge"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xd7-1j-o8z">
                                         <rect key="frame" x="186.66666666666663" y="0.0" width="166.33333333333337" height="30"/>
@@ -129,6 +141,9 @@
                                         <state key="normal" title="SELECT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v1w-Uw-NWY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -149,6 +164,13 @@
                             <constraint firstItem="xdB-Ux-4au" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="ugA-Yu-9a0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstImage" destination="PZF-Xg-fbx" id="SJM-Hj-FD0"/>
+                        <outlet property="firstLable" destination="iDC-Y6-wJ3" id="p8q-Wr-J5O"/>
+                        <outlet property="secondImage" destination="K9L-vU-Q6E" id="HCl-2P-kBF"/>
+                        <outlet property="secondLable" destination="ami-Dm-oQ5" id="JqD-Nc-Tf8"/>
+                        <outlet property="startLable" destination="xdB-Ux-4au" id="PDR-wW-6Wx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
