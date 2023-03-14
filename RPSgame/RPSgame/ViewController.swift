@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // 변수 / 속성
     @IBOutlet weak var startLable: UILabel!
     
     @IBOutlet weak var firstImage: UIImageView!
@@ -20,10 +21,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondLable: UILabel!
     
     var myChoice = Rps.rock
-
+    // 랜덤으로 컴퓨터 초이스를 정한다
     var comChoice = Rps(rawValue: Int.random(in: 0...2))!
     
-    
+    // 함수 . 메소드
+    // 앱의 화면에 들어오면 처음 실행되는 함수
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,9 +37,11 @@ class ViewController: UIViewController {
 
     }
 
-    
+    // 버튼을 누르면 sender 형태로 가져온다
     @IBAction func rpsButton(_ sender: UIButton) {
-        let title = sender.currentTitle!
+        
+        guard let title = sender.currentTitle else { return }
+//        let title = sender.currentTitle!
         
         switch title {
         case "ROCK":
@@ -62,6 +66,7 @@ class ViewController: UIViewController {
         
         startLable.text = "Choose your button"
         
+        // 컴퓨터의 초이스도 램덤으로 다시 바꿔줘야 한다
         comChoice = Rps(rawValue: Int.random(in: 0...2))!
     }
     
@@ -77,6 +82,9 @@ class ViewController: UIViewController {
         case .scissors:
             firstImage.image =  UIImage(named: "scissors.png")
             firstLable.text = "SCISSORS"
+        default:
+            break
+            
         }
         
         switch myChoice {
